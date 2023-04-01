@@ -4,14 +4,14 @@ import { Suspense } from "react"
 
 export default async function Home() {
    const data = await fetch(
-      "https://api.github.com/users/antonionetodeveloper",
-      {
-         next: {
-            revalidate: 30, // 30 seconds
-         },
-         // cache: "force-cache",  SSG -> Default
-         // cache: "no-store" SSR
-      }
+      "https://api.github.com/users/antonionetodeveloper"
+      // {
+      // next: {
+      //   revalidate: 30, // 30 seconds
+      // },
+      // cache: "force-cache",  SSG -> Default
+      // cache: "no-store" SSR
+      // }
    )
    const user = await data.json()
 

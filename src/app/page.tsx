@@ -1,3 +1,7 @@
-export default function Index() {
-  return <h1>Olá mundo</h1>
+export default function Home() {
+   return (
+      <>
+         <h1 className="text-3xl font-bold underline">Hello World!</h1>
+      </>
+   )
 }
