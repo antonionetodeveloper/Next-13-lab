@@ -8,8 +8,10 @@ export default function Page() {
    return (
       <>
          <Header currentPath="Rotas dinâmicas" />
-         <main>
-            <p>Dinamic routes</p>
+         <main className="pt-24">
+            <section>
+               <p>Dinamic routes</p>
+            </section>
          </main>
       </>
    )

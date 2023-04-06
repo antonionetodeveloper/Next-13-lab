@@ -8,8 +8,10 @@ export default function Page() {
    return (
       <>
          <Header currentPath="Novo diretório App" />
-         <main>
-            <p>Novo Diretório App</p>
+         <main className="pt-24">
+            <section>
+               <p>Novo Diretório App</p>
+            </section>
          </main>
       </>
    )

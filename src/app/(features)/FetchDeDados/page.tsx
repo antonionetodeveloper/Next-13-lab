@@ -8,8 +8,10 @@ export default function Page() {
    return (
       <>
          <Header currentPath="Fetch De Dados" />
-         <main>
-            <p>Fetch De Dados</p>
+         <main className="pt-24">
+            <section>
+               <p>Fetch De Dados</p>
+            </section>
          </main>
       </>
    )

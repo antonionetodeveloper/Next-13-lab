@@ -1,5 +1,4 @@
 import "@/style/globals.css"
-import { Inter } from "@next/font/google"
 
 export const metadata = {
    title: {
@@ -9,10 +8,6 @@ export const metadata = {
    description: "Testando as funcionalidades do next13!",
 }
 
-const inter = Inter({
-   subsets: ["latin"],
-})
-
 interface LayoutProps {
    children: React.ReactNode
 }
@@ -20,7 +15,9 @@ interface LayoutProps {
 export default function RootLayout({ children }: LayoutProps) {
    return (
       <html lang="pt-BR">
-         <body className={inter.className}>{children}</body>
+         <body className="bg-gradient-to-r from-slate-900 to-slate-700">
+            {children}
+         </body>
       </html>
    )
 }
