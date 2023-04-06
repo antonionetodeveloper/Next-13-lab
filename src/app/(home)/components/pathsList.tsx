@@ -24,9 +24,11 @@ const PathList = () => {
 
 const SinglePathCard = ({ name, path }: PathProps) => {
    return (
-      <li className="w-80 p-4 text-2xl text-center font-bold bg-blue-500 rounded shadow-md shadow-slate-900 hover:cursor-pointer hover:bg-blue-400 duration-300">
-         <Link href={path}>{name}</Link>
-      </li>
+      <Link href={path}>
+         <li className="w-80 p-4 text-2xl text-center font-bold bg-blue-500 rounded shadow-md shadow-slate-900 hover:cursor-pointer hover:bg-blue-400 duration-300">
+            {name}
+         </li>
+      </Link>
    )
 }
 
