@@ -6,7 +6,7 @@ export const Header = ({ currentPath }: { currentPath: string }) => {
    if (currentPath != "none") {
       return (
          <header className="fixed w-full h-24 backdrop-blur-sm bg-white/0 z-50">
-            <div className="flex items-center font-bold text-5xl p-7">
+            <div className="flex items-center font-bold text-lg lg:text-5xl p-7">
                <BackButton />
                <span className="mx-2 bg-gradient-to-r from-blue-100 to-blue-300 inline-block text-transparent bg-clip-text">
                   Next 13 /
@@ -20,7 +20,7 @@ export const Header = ({ currentPath }: { currentPath: string }) => {
    } else {
       return (
          <header className="fixed w-full h-24 backdrop-blur-sm bg-white/0 z-50">
-            <div className="flex items-center font-bold text-5xl p-7">
+            <div className="flex items-center font-bold text-xl lg:text-5xl p-7">
                <h1 className="bg-gradient-to-r from-blue-100 to-blue-400 inline-block text-transparent bg-clip-text">
                   Next 13
                </h1>

@@ -9,7 +9,7 @@ interface PathProps {
 const PathList = () => {
    return (
       <div>
-         <ul className="max-w-7xl grid m-auto grid-cols-3 justify-items-center items-center my-3">
+         <ul className="max-w-7xl grid m-auto grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3 justify-items-center items-center my-3">
             {paths.map((item: PathProps) => (
                <SinglePathCard
                   name={item.name}
@@ -25,7 +25,7 @@ const PathList = () => {
 const SinglePathCard = ({ name, path }: PathProps) => {
    return (
       <Link href={path}>
-         <li className="w-80 p-4 text-2xl text-center font-bold bg-blue-500 rounded shadow-md shadow-slate-900 hover:cursor-pointer hover:bg-blue-400 duration-300">
+         <li className="w-80 h-16 lg:h-auto p-4 text-2xl text-center font-bold bg-blue-500 rounded shadow-md shadow-slate-900 hover:cursor-pointer hover:bg-blue-400 duration-300">
             {name}
          </li>
       </Link>
