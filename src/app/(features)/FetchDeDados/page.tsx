@@ -10,7 +10,7 @@ export default function Page() {
          <Header currentPath="Fetch De Dados" />
          <main className="pt-24">
             <section>
-               <p>Fetch De Dados</p>
+               <p>Em breve...</p>
             </section>
          </main>
       </>

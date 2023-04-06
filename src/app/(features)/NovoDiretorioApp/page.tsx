@@ -10,7 +10,7 @@ export default function Page() {
          <Header currentPath="Novo diretório App" />
          <main className="pt-24">
             <section>
-               <p>Novo Diretório App</p>
+               <p>Em breve...</p>
             </section>
          </main>
       </>
