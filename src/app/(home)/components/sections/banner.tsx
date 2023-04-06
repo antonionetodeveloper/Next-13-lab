@@ -9,7 +9,7 @@ const Banner = () => {
             </h1>
             <p className="my-8 text-3xl max-w-5xl text-slate-400 text-center">
                Aqui estão algumas das incríveis novas funcionalidades do Next13
-               que vão revolucionar sua experiência de usuário:
+               que vão revolucionar a experiência do seu usuário:
             </p>
          </div>
          <PathList />
