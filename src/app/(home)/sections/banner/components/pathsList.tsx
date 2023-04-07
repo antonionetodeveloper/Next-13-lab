@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { paths } from "@/app/paths"
+import { previewPaths as paths } from "@/app/paths"
 
 interface PathProps {
    name: string

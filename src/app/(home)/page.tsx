@@ -1,6 +1,6 @@
 import { Header } from "../components/header"
-import Banner from "./components/sections/banner"
-import Preview from "./components/sections/preview"
+import Banner from "./sections/banner"
+import Preview from "./sections/preview"
 
 export default function Home() {
    return (
