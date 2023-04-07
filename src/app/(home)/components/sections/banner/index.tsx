@@ -1,4 +1,5 @@
-import PathList from "../pathsList"
+import PathList from "./components/pathsList"
+import SeeMore from "./components/seeMore"
 
 const Banner = () => {
    return (
@@ -13,6 +14,7 @@ const Banner = () => {
             </p>
          </div>
          <PathList />
+         <SeeMore componentID="section_preview" />
       </section>
    )
 }
