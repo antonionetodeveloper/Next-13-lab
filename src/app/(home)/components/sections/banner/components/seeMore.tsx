@@ -9,8 +9,8 @@ interface SeeMoreProps {
 const SeeMore = ({ componentID }: SeeMoreProps) => {
    return (
       <ScrollTo to={componentID} smooth={true} duration={500}>
-         <button className="flex flex-col items-center absolute bottom-0 left-1/2 transform -translate-x-1/2 gap-1 mt-5 p-3 text-slate-400 hover:text-slate-200 duration-150">
-            <p className="text-xl">Todas as novidades do Next13</p>
+         <button className="flex md:flex-col items-center absolute bottom-0 left-1/2 transform -translate-x-1/2 gap-1 mt-5 p-3 text-slate-400 hover:text-slate-200 duration-150">
+            <p className="md:text-xl">Todas as novidades do Next13</p>
             <svg
                xmlns="http://www.w3.org/2000/svg"
                fill="none"
