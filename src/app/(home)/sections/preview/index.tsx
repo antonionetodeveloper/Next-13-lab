@@ -5,7 +5,7 @@ import Changer from "./components/changer"
 import NavBar from "./components/navBar"
 
 const Preview = () => {
-   const [feature, setFeature] = useState<string>("Novo Diretório App")
+   const [feature, setFeature] = useState<string>("")
 
    return (
       <section

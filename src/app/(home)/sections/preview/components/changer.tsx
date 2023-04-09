@@ -1,9 +1,8 @@
-import { Suspense, useEffect, useState } from "react"
+"use client"
 
-import Loading from "@/app/loading"
-
-import NovoDiretorioApp from "./features/novoDiretorioApp"
+import { useEffect, useState } from "react"
 import FetchDeDados from "./features/fetchDeDados"
+import NovoDiretorioApp from "./features/novoDiretorioApp"
 import RotasDinamicas from "./features/rotasDinamicas"
 
 interface ChangerProps {
@@ -11,31 +10,28 @@ interface ChangerProps {
 }
 
 const Changer = ({ currentFeature }: ChangerProps) => {
-   const [feature, setFeature] = useState<JSX.Element | Promise<JSX.Element>>(
-      <NovoDiretorioApp />
-   )
+   const [feature, setFeature] = useState<JSX.Element>(<></>)
 
    useEffect(() => {
-      console.log("currentFeature: ", currentFeature)
-
-      switch (currentFeature) {
-         case "Novo Diretório App":
-            setFeature(<NovoDiretorioApp />)
-            break
-         case "Fetch de Dados":
-            setFeature(<FetchDeDados />)
-            break
-         case "Rotas Dinâmicas":
-            setFeature(<RotasDinamicas />)
-            break
+      const handleChanger = () => {
+         switch (currentFeature) {
+            case "Novo Diretório App":
+               return <NovoDiretorioApp />
+            case "Fetch de Dados":
+               return <FetchDeDados />
+            case "Rotas Dinâmicas":
+               return <RotasDinamicas />
+            default:
+               return <NovoDiretorioApp />
+         }
       }
+
+      setFeature(handleChanger())
    }, [currentFeature])
 
    return (
       <div className="w-full p-3">
-         <Suspense fallback={<Loading />}>
-            <>{feature}</>
-         </Suspense>
+         <>{feature}</>
       </div>
    )
 }

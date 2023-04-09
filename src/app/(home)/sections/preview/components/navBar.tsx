@@ -1,9 +1,8 @@
 import { paths } from "@/app/paths"
-import { Dispatch, SetStateAction } from "react"
 
 interface NavBarProps {
-   setCurrentFeature: Dispatch<SetStateAction<string>>
-   feature?: any
+   feature?: string
+   setCurrentFeature: any
 }
 
 const NavBar = ({ setCurrentFeature }: NavBarProps) => {
@@ -13,8 +12,8 @@ const NavBar = ({ setCurrentFeature }: NavBarProps) => {
             {paths.map((path) => (
                <Item
                   key={"keyItem@" + path.name}
-                  setCurrentFeature={setCurrentFeature}
                   feature={path.name}
+                  setCurrentFeature={setCurrentFeature}
                />
             ))}
          </ul>
@@ -22,11 +21,13 @@ const NavBar = ({ setCurrentFeature }: NavBarProps) => {
    )
 }
 
-const Item = ({ setCurrentFeature, feature }: NavBarProps) => {
+const Item = ({ feature, setCurrentFeature }: NavBarProps) => {
    return (
       <button
          className="pl-2 py-1 text-slate-400 border-l border-slate-400 hover:text-slate-200 hover:border-slate-200 duration-150"
-         onClick={() => setCurrentFeature(feature)}
+         onClick={() => {
+            setCurrentFeature(feature)
+         }}
       >
          <li className="text-2xl p-1 font-semibold text-start">
             <>{feature}</>

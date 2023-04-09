@@ -1,7 +1,7 @@
 const NovoDiretorioApp = () => {
    return (
       <div>
-         <p>Em breve... 2</p>
+         <p>Esse é o novo diretório app:</p>
       </div>
    )
 }
