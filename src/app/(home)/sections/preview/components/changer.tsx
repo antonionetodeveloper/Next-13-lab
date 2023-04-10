@@ -30,7 +30,7 @@ const Changer = ({ currentFeature }: ChangerProps) => {
    }, [currentFeature])
 
    return (
-      <div className="w-full p-3">
+      <div className="overflow-y-scroll w-full p-3">
          <>{feature}</>
       </div>
    )

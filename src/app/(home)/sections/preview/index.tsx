@@ -16,7 +16,7 @@ const Preview = () => {
             className="w-5/6 h-screen p-6 flex justify-center bg-gray-900 border border-white rounded"
             style={{ height: "calc(100vh - 26vh)" }}
          >
-            <NavBar setCurrentFeature={setFeature} />
+            <NavBar currentFeature={feature} setCurrentFeature={setFeature} />
             <Changer currentFeature={feature} />
          </div>
       </section>
